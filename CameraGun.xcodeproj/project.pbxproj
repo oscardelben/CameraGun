@@ -1,0 +1,295 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		55339E34143C5635000F9A6C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55339E33143C5635000F9A6C /* UIKit.framework */; };
+		55339E36143C5635000F9A6C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55339E35143C5635000F9A6C /* Foundation.framework */; };
+		55339E38143C5635000F9A6C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55339E37143C5635000F9A6C /* CoreGraphics.framework */; };
+		55339E3E143C5635000F9A6C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 55339E3C143C5635000F9A6C /* InfoPlist.strings */; };
+		55339E40143C5635000F9A6C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 55339E3F143C5635000F9A6C /* main.m */; };
+		55339E44143C5635000F9A6C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 55339E43143C5635000F9A6C /* AppDelegate.m */; };
+		55339E56143C5B85000F9A6C /* OverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 55339E55143C5B85000F9A6C /* OverlayView.m */; };
+		55339E59143C8D62000F9A6C /* gun.png in Resources */ = {isa = PBXBuildFile; fileRef = 55339E58143C8D62000F9A6C /* gun.png */; };
+		55339E5B143C8F86000F9A6C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55339E5A143C8F86000F9A6C /* QuartzCore.framework */; };
+		55339E5D143C944E000F9A6C /* bullet.png in Resources */ = {isa = PBXBuildFile; fileRef = 55339E5C143C944E000F9A6C /* bullet.png */; };
+		55339E5F143C96EB000F9A6C /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = 55339E5E143C96EB000F9A6C /* splash.png */; };
+		55339E61143C9981000F9A6C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55339E60143C9981000F9A6C /* AVFoundation.framework */; };
+		55339E63143CA0B5000F9A6C /* gun.caf in Resources */ = {isa = PBXBuildFile; fileRef = 55339E62143CA0B5000F9A6C /* gun.caf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		55339E2F143C5635000F9A6C /* CameraGun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CameraGun.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		55339E33143C5635000F9A6C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		55339E35143C5635000F9A6C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		55339E37143C5635000F9A6C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		55339E3B143C5635000F9A6C /* CameraGun-Info.plist */ = {isa = PBXFileReference; path = "CameraGun-Info.plist"; sourceTree = "<group>"; };
+		55339E3D143C5635000F9A6C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		55339E3F143C5635000F9A6C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		55339E41143C5635000F9A6C /* CameraGun-Prefix.pch */ = {isa = PBXFileReference; path = "CameraGun-Prefix.pch"; sourceTree = "<group>"; };
+		55339E42143C5635000F9A6C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		55339E43143C5635000F9A6C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		55339E54143C5B85000F9A6C /* OverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayView.h; sourceTree = "<group>"; };
+		55339E55143C5B85000F9A6C /* OverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayView.m; sourceTree = "<group>"; };
+		55339E58143C8D62000F9A6C /* gun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gun.png; sourceTree = "<group>"; };
+		55339E5A143C8F86000F9A6C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		55339E5C143C944E000F9A6C /* bullet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bullet.png; sourceTree = "<group>"; };
+		55339E5E143C96EB000F9A6C /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash.png; sourceTree = "<group>"; };
+		55339E60143C9981000F9A6C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		55339E62143CA0B5000F9A6C /* gun.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = gun.caf; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		55339E2C143C5635000F9A6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55339E61143C9981000F9A6C /* AVFoundation.framework in Frameworks */,
+				55339E5B143C8F86000F9A6C /* QuartzCore.framework in Frameworks */,
+				55339E34143C5635000F9A6C /* UIKit.framework in Frameworks */,
+				55339E36143C5635000F9A6C /* Foundation.framework in Frameworks */,
+				55339E38143C5635000F9A6C /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		55339E24143C5635000F9A6C = {
+			isa = PBXGroup;
+			children = (
+				55339E60143C9981000F9A6C /* AVFoundation.framework */,
+				55339E5A143C8F86000F9A6C /* QuartzCore.framework */,
+				55339E39143C5635000F9A6C /* CameraOverlay */,
+				55339E32143C5635000F9A6C /* Frameworks */,
+				55339E30143C5635000F9A6C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		55339E30143C5635000F9A6C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				55339E2F143C5635000F9A6C /* CameraGun.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		55339E32143C5635000F9A6C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				55339E33143C5635000F9A6C /* UIKit.framework */,
+				55339E35143C5635000F9A6C /* Foundation.framework */,
+				55339E37143C5635000F9A6C /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		55339E39143C5635000F9A6C /* CameraOverlay */ = {
+			isa = PBXGroup;
+			children = (
+				55339E42143C5635000F9A6C /* AppDelegate.h */,
+				55339E43143C5635000F9A6C /* AppDelegate.m */,
+				55339E54143C5B85000F9A6C /* OverlayView.h */,
+				55339E55143C5B85000F9A6C /* OverlayView.m */,
+				55339E58143C8D62000F9A6C /* gun.png */,
+				55339E5C143C944E000F9A6C /* bullet.png */,
+				55339E5E143C96EB000F9A6C /* splash.png */,
+				55339E62143CA0B5000F9A6C /* gun.caf */,
+				55339E3A143C5635000F9A6C /* Supporting Files */,
+			);
+			path = CameraOverlay;
+			sourceTree = "<group>";
+		};
+		55339E3A143C5635000F9A6C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				55339E3B143C5635000F9A6C /* CameraGun-Info.plist */,
+				55339E3C143C5635000F9A6C /* InfoPlist.strings */,
+				55339E3F143C5635000F9A6C /* main.m */,
+				55339E41143C5635000F9A6C /* CameraGun-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		55339E2E143C5635000F9A6C /* CameraGun */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55339E4D143C5636000F9A6C /* Build configuration list for PBXNativeTarget "CameraGun" */;
+			buildPhases = (
+				55339E2B143C5635000F9A6C /* Sources */,
+				55339E2C143C5635000F9A6C /* Frameworks */,
+				55339E2D143C5635000F9A6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CameraGun;
+			productName = CameraOverlay;
+			productReference = 55339E2F143C5635000F9A6C /* CameraGun.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		55339E26143C5635000F9A6C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = Fructivity;
+			};
+			buildConfigurationList = 55339E29143C5635000F9A6C /* Build configuration list for PBXProject "CameraGun" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 55339E24143C5635000F9A6C;
+			productRefGroup = 55339E30143C5635000F9A6C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				55339E2E143C5635000F9A6C /* CameraGun */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		55339E2D143C5635000F9A6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55339E3E143C5635000F9A6C /* InfoPlist.strings in Resources */,
+				55339E59143C8D62000F9A6C /* gun.png in Resources */,
+				55339E5D143C944E000F9A6C /* bullet.png in Resources */,
+				55339E5F143C96EB000F9A6C /* splash.png in Resources */,
+				55339E63143CA0B5000F9A6C /* gun.caf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		55339E2B143C5635000F9A6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55339E40143C5635000F9A6C /* main.m in Sources */,
+				55339E44143C5635000F9A6C /* AppDelegate.m in Sources */,
+				55339E56143C5B85000F9A6C /* OverlayView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		55339E3C143C5635000F9A6C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				55339E3D143C5635000F9A6C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		55339E4B143C5636000F9A6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		55339E4C143C5636000F9A6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		55339E4E143C5636000F9A6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CameraOverlay/CameraGun-Prefix.pch";
+				INFOPLIST_FILE = "CameraOverlay/CameraGun-Info.plist";
+				PRODUCT_NAME = CameraGun;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		55339E4F143C5636000F9A6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CameraOverlay/CameraGun-Prefix.pch";
+				INFOPLIST_FILE = "CameraOverlay/CameraGun-Info.plist";
+				PRODUCT_NAME = CameraGun;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		55339E29143C5635000F9A6C /* Build configuration list for PBXProject "CameraGun" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55339E4B143C5636000F9A6C /* Debug */,
+				55339E4C143C5636000F9A6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55339E4D143C5636000F9A6C /* Build configuration list for PBXNativeTarget "CameraGun" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55339E4E143C5636000F9A6C /* Debug */,
+				55339E4F143C5636000F9A6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 55339E26143C5635000F9A6C /* Project object */;
+}
