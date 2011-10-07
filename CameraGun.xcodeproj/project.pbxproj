@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5501703A143F3F3700026C46 /* fire.png in Resources */ = {isa = PBXBuildFile; fileRef = 55017039143F3F3700026C46 /* fire.png */; };
+		5501703D143F43DD00026C46 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5501703C143F43DD00026C46 /* icon.png */; };
 		55339E34143C5635000F9A6C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55339E33143C5635000F9A6C /* UIKit.framework */; };
 		55339E36143C5635000F9A6C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55339E35143C5635000F9A6C /* Foundation.framework */; };
 		55339E38143C5635000F9A6C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55339E37143C5635000F9A6C /* CoreGraphics.framework */; };
@@ -25,6 +26,7 @@
 
 /* Begin PBXFileReference section */
 		55017039143F3F3700026C46 /* fire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fire.png; sourceTree = "<group>"; };
+		5501703C143F43DD00026C46 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		55339E2F143C5635000F9A6C /* CameraGun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CameraGun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55339E33143C5635000F9A6C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		55339E35143C5635000F9A6C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -64,6 +66,7 @@
 		55339E24143C5635000F9A6C = {
 			isa = PBXGroup;
 			children = (
+				5501703C143F43DD00026C46 /* icon.png */,
 				55339E60143C9981000F9A6C /* AVFoundation.framework */,
 				55339E5A143C8F86000F9A6C /* QuartzCore.framework */,
 				55339E39143C5635000F9A6C /* CameraOverlay */,
@@ -175,6 +178,7 @@
 				55339E5F143C96EB000F9A6C /* splash.png in Resources */,
 				55339E63143CA0B5000F9A6C /* gun.caf in Resources */,
 				5501703A143F3F3700026C46 /* fire.png in Resources */,
+				5501703D143F43DD00026C46 /* icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
