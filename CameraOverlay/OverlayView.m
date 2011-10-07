@@ -11,6 +11,7 @@
 #define BOTTOM_BAR_HEIGHT 60
 
 #define VIEW_FINDER_RADIUS 60
+#define VIEW_FIRE_AREA_RADIUS 30
 
 #define CGRectMidPoint(rect) CGPointMake(CGRectGetMidX(rect), CGRectGetMidY(rect))
 
@@ -79,14 +80,16 @@
     CGContextFillRect(context, bottomBar);
     
     // Add a fire button
-    UIButton *fireButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    [fireButton setTitle:@"Fire!" forState:UIControlStateNormal];
+    UIButton *fireButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    //[fireButton setTitle:@"Fire!" forState:UIControlStateNormal];
     [fireButton addTarget:self action:@selector(fire) forControlEvents:UIControlEventTouchUpInside];
     
-    float buttonWidth = 150;
-    float buttonHeight = 40;
+    float buttonWidth = 279;
+    float buttonHeight = 48;
     
-    fireButton.frame = CGRectMake(self.frame.size.width / 2 - buttonWidth / 2, self.frame.size.height - BOTTOM_BAR_HEIGHT + 10, buttonWidth, buttonHeight);
+    fireButton.frame = CGRectMake(self.frame.size.width / 2 - buttonWidth / 2, self.frame.size.height - BOTTOM_BAR_HEIGHT + 6, buttonWidth, buttonHeight);
+    
+    [fireButton setImage:[UIImage imageNamed:@"fire.png"] forState:UIControlStateNormal];
     
     [self addSubview:fireButton];
 }
@@ -136,8 +139,12 @@
     [UIView animateWithDuration:0.5 animations:^{
         // generate a random point near the center
 
-        float x = (arc4random() % VIEW_FINDER_RADIUS) + CGRectGetMidX(self.frame) - (VIEW_FINDER_RADIUS / 2);
-        float y = (arc4random() % VIEW_FINDER_RADIUS) + CGRectGetMidY(self.frame) - BOTTOM_BAR_HEIGHT - (VIEW_FINDER_RADIUS / 2);
+        // compensate for image size
+        float xDelta = 8;
+        float yDelta = 8;
+        
+        float x = (arc4random() % VIEW_FIRE_AREA_RADIUS) + CGRectGetMidX(self.frame) - (VIEW_FIRE_AREA_RADIUS / 2) - xDelta;
+        float y = (arc4random() % VIEW_FIRE_AREA_RADIUS) + CGRectGetMidY(self.frame) - BOTTOM_BAR_HEIGHT - (VIEW_FIRE_AREA_RADIUS / 2) - yDelta;
         
         bullet.frame = CGRectMake(x, y, bulletImage.size.width / 2, bulletImage.size.height / 2);
     } completion:^(BOOL finished) {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5501703A143F3F3700026C46 /* fire.png in Resources */ = {isa = PBXBuildFile; fileRef = 55017039143F3F3700026C46 /* fire.png */; };
 		55339E34143C5635000F9A6C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55339E33143C5635000F9A6C /* UIKit.framework */; };
 		55339E36143C5635000F9A6C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55339E35143C5635000F9A6C /* Foundation.framework */; };
 		55339E38143C5635000F9A6C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55339E37143C5635000F9A6C /* CoreGraphics.framework */; };
@@ -23,14 +24,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		55017039143F3F3700026C46 /* fire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fire.png; sourceTree = "<group>"; };
 		55339E2F143C5635000F9A6C /* CameraGun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CameraGun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55339E33143C5635000F9A6C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		55339E35143C5635000F9A6C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		55339E37143C5635000F9A6C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		55339E3B143C5635000F9A6C /* CameraGun-Info.plist */ = {isa = PBXFileReference; path = "CameraGun-Info.plist"; sourceTree = "<group>"; };
+		55339E3B143C5635000F9A6C /* CameraGun-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CameraGun-Info.plist"; sourceTree = "<group>"; };
 		55339E3D143C5635000F9A6C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		55339E3F143C5635000F9A6C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		55339E41143C5635000F9A6C /* CameraGun-Prefix.pch */ = {isa = PBXFileReference; path = "CameraGun-Prefix.pch"; sourceTree = "<group>"; };
+		55339E41143C5635000F9A6C /* CameraGun-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CameraGun-Prefix.pch"; sourceTree = "<group>"; };
 		55339E42143C5635000F9A6C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		55339E43143C5635000F9A6C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		55339E54143C5B85000F9A6C /* OverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayView.h; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				55339E5C143C944E000F9A6C /* bullet.png */,
 				55339E5E143C96EB000F9A6C /* splash.png */,
 				55339E62143CA0B5000F9A6C /* gun.caf */,
+				55017039143F3F3700026C46 /* fire.png */,
 				55339E3A143C5635000F9A6C /* Supporting Files */,
 			);
 			path = CameraOverlay;
@@ -171,6 +174,7 @@
 				55339E5D143C944E000F9A6C /* bullet.png in Resources */,
 				55339E5F143C96EB000F9A6C /* splash.png in Resources */,
 				55339E63143CA0B5000F9A6C /* gun.caf in Resources */,
+				5501703A143F3F3700026C46 /* fire.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

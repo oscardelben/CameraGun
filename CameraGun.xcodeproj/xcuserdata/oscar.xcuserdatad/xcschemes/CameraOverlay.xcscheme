@@ -14,7 +14,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "55339E2E143C5635000F9A6C"
-               BuildableName = "CameraOverlay.app"
+               BuildableName = "CameraGun.app"
                BlueprintName = "CameraGun"
                ReferencedContainer = "container:CameraGun.xcodeproj">
             </BuildableReference>
@@ -32,7 +32,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "55339E2E143C5635000F9A6C"
-            BuildableName = "CameraOverlay.app"
+            BuildableName = "CameraGun.app"
             BlueprintName = "CameraGun"
             ReferencedContainer = "container:CameraGun.xcodeproj">
          </BuildableReference>
@@ -50,7 +50,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "55339E2E143C5635000F9A6C"
-            BuildableName = "CameraOverlay.app"
+            BuildableName = "CameraGun.app"
             BlueprintName = "CameraGun"
             ReferencedContainer = "container:CameraGun.xcodeproj">
          </BuildableReference>
@@ -68,7 +68,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "55339E2E143C5635000F9A6C"
-            BuildableName = "CameraOverlay.app"
+            BuildableName = "CameraGun.app"
             BlueprintName = "CameraGun"
             ReferencedContainer = "container:CameraGun.xcodeproj">
          </BuildableReference>
